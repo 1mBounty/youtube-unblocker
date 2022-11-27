@@ -116,7 +116,7 @@
     <hr style="width:25% !important">
 
     </div>
-	<div id="video-holder-holder">
+	//<div id="video-holder-holder">
 		<div id="video-holder" class="center" style="display:none;">
 			<hr>
 			<iframe id="video" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?wmode=transparent&amp;iv_load_policy=3&amp;autoplay=0&amp;html5=1&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=0&amp;theme=light" frameborder="0" scrolling="no" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
@@ -149,7 +149,7 @@
     	id = id.substr(id.length - 11, 11);
     	video_holder = document.getElementById('video-holder').cloneNode(true);
     	video_holder.style.display = 'block';
-    	video_holder.children[1].src = base + path + end;
+    	video_holder.children[1].src = base + id + end;
     	video_holder_holder.appendChild(video_holder);
     }
   </script>
