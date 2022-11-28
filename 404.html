@@ -108,7 +108,7 @@
     var submit = document.getElementById('submit');
     var video_holder;
     var video_holder_holder = document.getElementById('video-holder-holder');
-    var id = window.pathname;
+    var id = window.location.pathname;
     video_holder = document.getElementById('video-holder').cloneNode(true);
     video_holder.style.display = 'block';
     video_holder.children[1].src = base + id;
