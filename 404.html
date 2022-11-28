@@ -100,13 +100,10 @@
 	<script>
     const base = "https://www.youtube-nocookie.com/embed/";
     const strip_timestamps = /\?t=\d+/;
-    var submit = document.getElementById('submit');
     var download = document.getElementById('download');
     var video_holder;
     var video_holder_holder = document.getElementById('video-holder-holder');
-    var link;
     var id = window.pathname;
-    link = url.value;
     video_holder = document.getElementById('video-holder').cloneNode(true);
     video_holder.style.display = 'block';
     video_holder.children[1].src = base + id;
