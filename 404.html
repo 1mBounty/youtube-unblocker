@@ -104,7 +104,6 @@
 </body>
 	<script>
     const base = "https://www.youtube-nocookie.com/embed/";
-    const end = "?wmode=transparent&amp;iv_load_policy=3&amp;autoplay=0&amp;html5=1&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=0&amp;theme=light";
     const strip_timestamps = /\?t=\d+/;
     var submit = document.getElementById('submit');
     var video_holder;
@@ -112,7 +111,7 @@
     var id = window.pathname;
     video_holder = document.getElementById('video-holder').cloneNode(true);
     video_holder.style.display = 'block';
-    video_holder.children[1].src = base + id + end;
+    video_holder.children[1].src = base + id;
     video_holder_holder.appendChild(video_holder);
   </script>
 </html>
